@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    background-color: #6D1A36;
+}
+
+#web-title {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Raleway";
+    border-bottom: 1px solid #453750;
+    background: linear-gradient(#73648A, #A393BF);
+    
+}
+
+#reseñas-ul {
+    width: 20rem;
+    background: linear-gradient(#CEA0AE, #D5B0AC);
+    float: left;
+}
+
+#reseñas-ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#reseñas-ul ul a{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.movie-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway";
+    padding: 10px;
+    height: 2rem;
+    border-bottom: 0.5px solid black;
+    border-right: 0.5px solid black;
+    transition: 100ms;
+}
+
+.first-child {
+    background-color: #A663CC;
+    font-size: 1.5rem;
+    font-family: "Raleway";
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.movie-link:hover {
+    background-color: #6D1A36;
+    color: white;
+}
+
+#movies-posters-image {
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+}
+
+#movies-posters-image div {
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    transition: 250ms;
+    background-size: 200px 200px;
+    color: black;
+    border: 1px solid black;
+}
+
+#movies-posters-link > div:hover {
+    opacity: 40%;
+    color: white;
+}
+
+#movies-posters-link div h3:hover {
+    opacity: 100%;
+    color: white;
+}
