@@ -5,6 +5,15 @@ body {
     background-color: #6D1A36;
 }
 
+h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
 #web-title {
     text-align: center;
     padding-top: 10px;
@@ -67,25 +76,27 @@ body {
     padding: 20px;
     gap: 20px;
     grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
 }
 
 #movies-posters-image div {
-    position: relative;
-    font-size: 2rem;
-    text-align: center;
-    transition: 250ms;
     background-size: 200px 200px;
-    color: black;
-    border: 1px solid black;
 }
 
-#movies-posters-link > div:hover {
-    opacity: 40%;
+.overlay-movie {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: "Raleway";
+    transition: opacity 250ms;
     color: white;
 }
 
-#movies-posters-link div h3:hover {
-    opacity: 100%;
-    color: white;
+#movies-posters-image div:hover .overlay-movie {
+    opacity: 1;
 }
